@@ -71,7 +71,7 @@
 
                 .header-image,
                 .container {
-                    width: 25vw;
+                    width: 20vw;
                     padding-left: 0;
                     padding-right: 0;
                 }
@@ -142,7 +142,10 @@
                 <label for="email" class="form-label">Email:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
-            <br>
+            <div class="mb-3">
+                <label for="affiliate" class="form-label">Mã giới thiệu:</label>
+                <input type="affiliate" class="form-control" id="affiliate" name="affiliate" required>
+            </div>
             <div class="d-flex justify-content-center">
                 <button type="submit" class="btn btn-primary">Xác nhận</button>
             </div>
@@ -155,7 +158,7 @@
             document.getElementById("multi-section-form").addEventListener("submit", function (event) {
                 event.preventDefault();
                 var formData = new FormData(event.target);
-                fetch('https://script.google.com/macros/s/AKfycbwO3qxZG-YKa-Ha4tcULaHE4iz8FYiVr8sg4shWAg4A56fpFdItYgK7gi9ZsEAWlxqz/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbwjQRYEvJoYpfXC3ryj7-q-2PD-Yc1ulrjceyMflVehqZ7cwwtM70aZUuECX3CHfoPL/exec', {
                     method: 'POST',
                     body: formData
                 })
